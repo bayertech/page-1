@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BAYERTECH - Outsourcing IT dla firm</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Atkinson+Hyperlegible:wght@400;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=b9_EDTh6qfSNkXWWJQG75mOndozpFKlNcaBE0LDHgzpe5px-hPcvhZjmInidGA9Pbh188-gLAuRvKPwGR_689zMEYEt3PRu7DchGnXkjUB4LmHTNHHlpMUBGbo29Qq6B4eFE92sTCplQW2gV8HVCaQazO-IywrQJqpnnUGXbhUbRub7OAwHsYXmV-Tnz3d9tlvEltGo2pF4v25xUO12QXlWMKytiQ-7mlcVrUVq9sn892_g33sas2qcW0THIDUS9vyDrYeKjAl6tD4EeDwP36RAxfCqkOJA6dvotwavGm6uGwzEPgyDig4vefbJsTeYcV23D_zHr-c_QJaq5BoFvrQ" charset="UTF-8"></script><style>
+    :root {
+      --bg:        #F4F1EB;
+      --white:     #FFFFFF;
+      --ink:       #0F0E0C;
+      --ink-2:     #2A2825;
+      --ink-3:     #5C5950;
+      --ink-4:     #8C887E;
+      --night:     #0D1B2A;
+      --night-2:   #162436;
+      --accent:    #1A4F8A;     
+      --accent-2:  #E8F0FA;
+      --accent-dk: #0F3260;
+      --pine:      #1F5C38;
+      --pine-lt:   #E6F2EB;
+      --rust:      #8B3A1A;     
+      --rust-lt:   #FDF0EB;
+      --gold:      #B07D2A;
+      --border:    rgba(15,14,12,0.09);
+      --border-2:  rgba(15,14,12,0.15);
+      --r:         5px;
+      --r-lg:      10px;
+      --r-xl:      16px;
+      --page:      1100px;
+      --header-h:  68px;
+    }
+
+    
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 1ms !important;
+        transition-duration: 1ms !important;
+      }
+    }
+
+    body {
+      font-family: 'Atkinson Hyperlegible', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    
+    .skip-link {
+      position: fixed;
+      top: -100px;
+      left: 1.5rem;
+      z-index: 9999;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.875rem;
+      font-weight: 700;
+      padding: 0.6rem 1.25rem;
+      border-radius: var(--r);
+      text-decoration: none;
+      transition: top 0.15s ease;
+      outline: none;
+      box-shadow: 0 4px 20px rgba(26,79,138,0.4);
+    }
+    .skip-link:focus { top: 1rem; }
+    .skip-link:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+
+    
+    .a11y-bar {
+      background: var(--pine);
+      color: #fff;
+      text-align: center;
+      padding: 0.4rem 1rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+   
+    header {
+      background: rgba(244,241,235,0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-2);
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      height: var(--header-h);
+    }
+
+    .header-inner {
+      max-width: var(--page);
+      margin: 0 auto;
+      padding: 0 2rem;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+   
+    .logo-link {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+    .logo-mark { width: 36px; height: 36px; flex-shrink: 0; }
+    .logo-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.2rem;
+      color: var(--ink);
+      line-height: 1;
+      letter-spacing: -0.01em;
+    }
+    .logo-name span { color: var(--accent); }
+    .logo-dot {
+      width: 6px; height: 6px;
+      background: var(--rust);
+      border-radius: 50%;
+      display: inline-block;
+      margin-left: 2px;
+      vertical-align: super;
+    }
+
+  
+    nav ul { list-style: none; display: flex; align-items: center; gap: 0.15rem; }
+    nav a {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: var(--ink-2);
+      text-decoration: none;
+      padding: 0.45rem 0.9rem;
+      border-radius: var(--r);
+      transition: background 0.12s, color 0.12s;
+      letter-spacing: 0.01em;
+    }
+    nav a:hover { background: rgba(15,14,12,0.06); color: var(--ink); }
+    nav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  
+    .nav-cta {
+      background: var(--ink) !important;
+      color: #fff !important;
+      font-weight: 700 !important;
+      padding: 0.5rem 1.1rem !important;
+      border-radius: 100px !important;
+      letter-spacing: 0.02em !important;
+    }
+    .nav-cta:hover { background: var(--ink-2) !important; }
+
+    .page {
+      max-width: var(--page);
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .hero-section {
+      background: var(--night);
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+      opacity: 0.22;
+      pointer-events: none;
+    }
+
+    .hero-section::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(105deg, rgba(13,27,42,0.96) 45%, rgba(13,27,42,0.5) 100%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: var(--page);
+      margin: 0 auto;
+      padding: 6rem 2rem 5rem;
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.82);
+      margin-bottom: 1.25rem;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 24px; height: 1px;
+      background: rgba(255,255,255,0.35);
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+    h1 em {
+      font-style: italic;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .hero-lead {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: rgba(255,255,255,0.92);
+      max-width: 480px;
+      margin-bottom: 2.5rem;
+    }
+
+
+    .hero-actions { display: flex; gap: 0.875rem; flex-wrap: wrap; }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: 'Atkinson Hyperlegible', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--ink);
+      background: #fff;
+      padding: 0.8rem 1.6rem;
+      border-radius: 100px;
+      text-decoration: none;
+      letter-spacing: 0.01em;
+      transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+      box-shadow: 0 2px 0 rgba(0,0,0,0.12), 0 8px 24px rgba(0,0,0,0.25);
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-primary::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 100%);
+      pointer-events: none;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 0 rgba(0,0,0,0.12), 0 16px 32px rgba(0,0,0,0.3);
+      background: #f5f5f5;
+    }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-primary:focus-visible { outline: 3px solid rgba(255,255,255,0.8); outline-offset: 3px; }
+
+    .btn-primary-arrow {
+      width: 18px; height: 18px;
+      background: var(--ink);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      transition: transform 0.15s;
+    }
+    .btn-primary:hover .btn-primary-arrow { transform: translateX(3px); }
+    .btn-primary-arrow svg { width: 9px; height: 9px; }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'Atkinson Hyperlegible', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.75);
+      background: rgba(255,255,255,0.16);
+      border: 2px solid rgba(255,255,255,0.55);
+      padding: 0.8rem 1.6rem;
+      border-radius: 100px;
+      text-decoration: none;
+      letter-spacing: 0.01em;
+      transition: background 0.15s, border-color 0.15s, color 0.15s, transform 0.15s;
+      backdrop-filter: blur(8px);
+    }
+    .btn-ghost:hover {
+      background: rgba(255,255,255,0.14);
+      border-color: rgba(255,255,255,0.85);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+    .btn-ghost:focus-visible { outline: 3px solid rgba(255,255,255,0.7); outline-offset: 3px; }
+
+
+    .hero-panel {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--r-xl);
+      padding: 1.75rem;
+      backdrop-filter: blur(16px);
+    }
+
+    .panel-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.82);
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .panel-label::before {
+      content: '';
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: #4ade80;
+      box-shadow: 0 0 6px #4ade80;
+    }
+
+    .stat-item {
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .stat-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .stat-item:first-child { padding-top: 0; }
+
+    .stat-lbl { font-size: 0.83rem; color: rgba(255,255,255,0.82); }
+    .stat-val {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.75rem;
+      color: #fff;
+      line-height: 1;
+    }
+
+    .trust-bar {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 1.1rem 0;
+    }
+    .trust-inner {
+      max-width: var(--page);
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .trust-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #4F4A42;
+      flex-shrink: 0;
+    }
+    .trust-divider {
+      width: 1px; height: 20px;
+      background: var(--border-2);
+      flex-shrink: 0;
+    }
+    .trust-items { display: flex; gap: 1.75rem; flex-wrap: wrap; align-items: center; }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--ink-3);
+    }
+    .trust-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .section { padding: 5.5rem 0; }
+    .section-alt { background: var(--white); }
+    .section-dark { background: var(--night); color: #fff; }
+
+    .section-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .section-label::before {
+      content: '';
+      display: inline-block;
+      width: 20px; height: 1.5px;
+      background: var(--accent);
+    }
+
+    .section-dark .section-label { color: rgba(255,255,255,0.85); }
+    .section-dark .section-label::before { background: rgba(255,255,255,0.3); }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      font-weight: 400;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 0.6rem;
+    }
+    .section-dark h2 { color: #fff; }
+    .section-alt h2 { color: var(--ink); }
+
+    .section-desc {
+      font-size: 1rem;
+      color: var(--ink-3);
+      max-width: 540px;
+      line-height: 1.75;
+    }
+    .section-dark .section-desc { color: rgba(255,255,255,0.85); }
+
+    .section-head { margin-bottom: 3rem; }
+
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border-2);
+      border: 1px solid var(--border-2);
+      border-radius: var(--r-xl);
+      overflow: hidden;
+    }
+
+    .service-card {
+      background: var(--white);
+      padding: 2rem 1.75rem;
+      transition: background 0.15s;
+      position: relative;
+    }
+    .service-card:hover { background: var(--accent-2); }
+
+    .service-num {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      color: #4F4A42;
+      letter-spacing: 0.1em;
+      margin-bottom: 1.25rem;
+    }
+
+    .service-icon-wrap {
+      width: 44px; height: 44px;
+      border-radius: var(--r);
+      border: 1.5px solid var(--border-2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.1rem;
+      background: var(--bg);
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .service-card:hover .service-icon-wrap {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+    .service-icon-wrap svg { width: 20px; height: 20px; transition: stroke 0.15s; }
+    .service-card:hover .service-icon-wrap svg { stroke: #fff; }
+
+    .service-card h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+    .service-card p {
+      font-size: 0.875rem;
+      color: var(--ink-3);
+      line-height: 1.7;
+    }
+
+    .split-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      min-height: 560px;
+    }
+
+    .split-photo {
+      position: relative;
+      overflow: hidden;
+    }
+    .split-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .split-photo-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(13,27,42,0.5) 0%, transparent 60%);
+    }
+
+    .split-content {
+      background: var(--night);
+      padding: 4rem 3.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .process-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin-top: 2.5rem;
+      list-style: none;
+    }
+
+    .process-item {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 1.25rem;
+      position: relative;
+    }
+
+    .process-spine {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .process-num {
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(255,255,255,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.82);
+      flex-shrink: 0;
+      z-index: 1;
+      transition: border-color 0.2s, background 0.2s, color 0.2s;
+    }
+    .process-item:hover .process-num {
+      border-color: rgba(255,255,255,0.6);
+      background: rgba(255,255,255,0.12);
+      color: #fff;
+    }
+
+    .process-line {
+      width: 1px;
+      flex: 1;
+      background: rgba(255,255,255,0.16);
+      min-height: 1.5rem;
+    }
+    .process-item:last-child .process-line { display: none; }
+
+    .process-body { padding: 0.5rem 0 2rem; }
+    .process-item:last-child .process-body { padding-bottom: 0; }
+
+    .process-body h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: 0.4rem;
+      letter-spacing: -0.01em;
+    }
+    .process-body p {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.7;
+    }
+
+
+    .why-section { background: var(--bg); }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .why-card {
+      background: var(--white);
+      border: 1px solid var(--border-2);
+      border-radius: var(--r-lg);
+      padding: 1.75rem;
+      transition: box-shadow 0.15s, transform 0.15s;
+      position: relative;
+    }
+    .why-card:hover {
+      box-shadow: 0 8px 32px rgba(15,14,12,0.1);
+      transform: translateY(-2px);
+    }
+
+    .why-card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    .why-badge {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: var(--pine-lt);
+      color: var(--pine);
+      padding: 0.2rem 0.55rem;
+      border-radius: 100px;
+    }
+
+    .why-icon {
+      width: 36px; height: 36px;
+      background: var(--bg);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .why-icon svg { width: 16px; height: 16px; }
+
+    .why-card h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+    .why-card p {
+      font-size: 0.875rem;
+      color: var(--ink-3);
+      line-height: 1.7;
+    }
+
+    .photo-band {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      height: 320px;
+      overflow: hidden;
+    }
+
+    .photo-band-item {
+      position: relative;
+      overflow: hidden;
+    }
+    .photo-band-item img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .photo-band-item:hover img { transform: scale(1.04); }
+
+    .photo-band-caption {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+      background: rgba(0,0,0,0.4);
+      padding: 0.25rem 0.6rem;
+      border-radius: 100px;
+      backdrop-filter: blur(4px);
+    }
+
+    .contact-section { background: var(--white); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .contact-info h2 { margin-bottom: 0.75rem; }
+
+    .contact-details { margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; }
+
+    .contact-row {
+      display: flex;
+      gap: 0.875rem;
+      align-items: flex-start;
+    }
+    .contact-icon {
+      width: 38px; height: 38px;
+      border-radius: var(--r);
+      border: 1px solid var(--border-2);
+      background: var(--bg);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-icon svg { width: 16px; height: 16px; }
+    .contact-row strong {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #4F4A42;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.1rem;
+    }
+    .contact-row a, .contact-row span {
+      font-size: 0.95rem;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .contact-row a:hover { color: var(--accent); text-decoration: underline; }
+    .contact-row a:focus-visible { outline: 2px solid var(--accent); border-radius: 2px; }
+
+    .contact-form-wrap {
+      background: var(--bg);
+      border: 1px solid var(--border-2);
+      border-radius: var(--r-xl);
+      padding: 2.25rem 2.5rem;
+    }
+
+    .form-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--ink);
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    .form-group { margin-bottom: 1rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+
+    label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--ink-2);
+      margin-bottom: 0.35rem;
+      letter-spacing: 0.02em;
+    }
+    .req { color: var(--accent); margin-left: 1px; }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 0.7rem 0.95rem;
+      border: 1.5px solid var(--border-2);
+      border-radius: var(--r);
+      font-family: 'Atkinson Hyperlegible', sans-serif;
+      font-size: 0.95rem;
+      color: var(--ink);
+      background: var(--white);
+      transition: border-color 0.15s, box-shadow 0.15s;
+      appearance: none;
+    }
+    input::placeholder, textarea::placeholder { color: #4F4A42; }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(26,79,138,0.1);
+    }
+    select {
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%235C5950' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-right: 2.5rem;
+      cursor: pointer;
+    }
+    textarea { resize: vertical; min-height: 110px; }
+
+
+    .btn-submit {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      font-family: 'Atkinson Hyperlegible', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #fff;
+      background: var(--ink);
+      border: none;
+      padding: 0.9rem 1.5rem;
+      border-radius: 100px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
+      box-shadow: 0 2px 0 rgba(0,0,0,0.2), 0 4px 16px rgba(0,0,0,0.15);
+      letter-spacing: 0.02em;
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-submit::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 50%);
+      pointer-events: none;
+    }
+    .btn-submit:hover {
+      background: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 0 rgba(26,79,138,0.3), 0 8px 24px rgba(26,79,138,0.25);
+    }
+    .btn-submit:active { transform: translateY(0); }
+    .btn-submit:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    .submit-arrow {
+      width: 22px; height: 22px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      transition: transform 0.15s;
+    }
+    .btn-submit:hover .submit-arrow { transform: translateX(4px); }
+    .submit-arrow svg { width: 10px; height: 10px; }
+
+    .form-note {
+      font-size: 0.75rem;
+      color: #4F4A42;
+      margin-top: 0.75rem;
+      line-height: 1.5;
+    }
+    .form-note a { color: var(--accent); }
+    .form-note a:hover { text-decoration: underline; }
+
+
+    footer {
+      background: var(--ink);
+      color: rgba(255,255,255,0.6);
+      padding: 2.5rem 2rem;
+    }
+    .footer-inner {
+      max-width: var(--page);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer-logo {
+      display: flex; align-items: center; gap: 0.6rem;
+      text-decoration: none;
+    }
+    .footer-logo-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.05rem;
+      color: #fff;
+    }
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.45);
+      text-decoration: none;
+    }
+    .footer-links a:hover { color: #fff; }
+    .footer-links a:focus-visible { outline: 2px solid rgba(255,255,255,0.5); border-radius: 2px; }
+    .footer-copy { font-size: 0.78rem; color: rgba(255,255,255,0.25); }
+
+
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; padding: 4rem 2rem; }
+      .hero-panel { max-width: 400px; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .split-section { grid-template-columns: 1fr; }
+      .split-photo { height: 280px; }
+      .why-grid { grid-template-columns: 1fr 1fr; }
+      .photo-band { grid-template-columns: 1fr; height: auto; }
+      .photo-band-item { height: 200px; }
+      .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    }
+
+    @media (max-width: 620px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+      nav ul { gap: 0; }
+      nav a { padding: 0.45rem 0.6rem; font-size: 0.82rem; }
+    }
+
+    @media print {
+      .skip-link, .a11y-bar { display: none; }
+      header { position: static; }
+    }
+  
+.split-content h2,
+.split-content .section-label,
+.split-content .section-desc{
+  color:#FFFFFF !important;
+}
+
+.split-content .section-desc{
+  opacity:0.92;
+}
+
+</style>
+
+<style>
+.a11y-toolbar{position:fixed;right:16px;top:120px;z-index:9999;display:flex;flex-direction:column;gap:8px}
+.a11y-toolbar button,.back-to-top{background:#111;color:#fff;border:2px solid #fff;padding:10px 12px;cursor:pointer;border-radius:8px;font-size:16px}
+.high-contrast{filter:contrast(125%)}
+.large-text{font-size:120%}
+footer, footer *{color:#fff !important}
+.back-to-top{position:fixed;right:16px;bottom:16px;display:none;z-index:9999}
+</style>
+
+</head>
+<body>
+
+<button class="back-to-top" id="backToTop" aria-label="Powrót na górę">↑</button>
+
+
+  <a href="#main-content" class="skip-link">Przejdź do głównej treści</a>
+
+
+  <header>
+    <div class="header-inner">
+      <a href="#" class="logo-link" aria-label="BayerTech — strona główna">
+        <svg class="logo-mark" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="36" height="36" rx="8" fill="#0F0E0C"/>
+          <path d="M10 9 L10 27 L18.5 27 C22.1 27 24.8 24.6 24.8 21.5 C24.8 19.6 23.8 18 22.3 17.1 C23.5 16.1 24.3 14.6 24.3 13 C24.3 10.1 21.9 9 18.5 9 Z M13.2 12 L18 12 C19.9 12 21.2 13 21.2 14.4 C21.2 15.8 19.9 16.8 18 16.8 L13.2 16.8 Z M13.2 19.8 L18.5 19.8 C20.8 19.8 21.6 21 21.6 22.2 C21.6 23.5 20.5 24.5 18.5 24.5 L13.2 24.5 Z" fill="white"/>
+          <circle cx="28" cy="9" r="3" fill="#1A4F8A"/>
+        </svg>
+        <span class="logo-name">BAYER<span>TECH</span></span>
+      </a>
+
+      <nav aria-label="Nawigacja główna">
+        <ul role="list">
+          <li><a href="#uslugi">Usługi</a></li>
+          <li><a href="#jak-dzialamy">Jak działamy</a></li>
+          <li><a href="#dlaczego-my">Dlaczego my</a></li>
+          <li><a href="#kontakt" class="nav-cta">Napisz do nas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main-content" tabindex="-1">
+
+
+    <section class="hero-section" aria-labelledby="hero-heading">
+      <img
+        class="hero-photo"
+        src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1400&q=80&auto=format&fit=crop"
+        alt=""
+        aria-hidden="true"
+        loading="eager"
+      />
+      <div class="hero-inner">
+        <div>
+          <p class="hero-eyebrow">Outsourcing IT dla firm</p>
+          <h1 id="hero-heading">
+            Rozwiązujemy problemy<br>
+            ludzi, <em>nie komputerów</em>
+          </h1>
+          <p class="hero-lead">
+            BAYERTECH wchodzi w struktury Twojej firmy jak wewnętrzny dział IT - zna Twoje potrzeby, procesy i ludzi. Zyskujesz kompetentny zespół bez kosztów etatu i ryzyka zatrudnienia.
+          </p>
+          <div class="hero-actions">
+            <a href="#kontakt" class="btn-primary">
+              Umów bezpłatny audyt
+              <span class="btn-primary-arrow" aria-hidden="true">
+                <svg viewBox="0 0 9 9" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 4.5 L8 4.5M5 1.5 L8 4.5 L5 7.5"/>
+                </svg>
+              </span>
+            </a>
+            <a href="#uslugi" class="btn-ghost">Zobacz usługi</a>
+          </div>
+        </div>
+
+        <div class="hero-panel" role="region" aria-label="BayerTech w liczbach">
+          <p class="panel-label">BayerTech w liczbach</p>
+          <div class="stat-item">
+            <span class="stat-lbl">Lat doświadczenia</span>
+            <span class="stat-val">20+</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-lbl">Obsługiwanych firm</span>
+            <span class="stat-val">150+</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-lbl">Czas reakcji SLA</span>
+            <span class="stat-val">&lt; 2 h</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-lbl">Oszczędność vs. etat</span>
+            <span class="stat-val">40%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="trust-bar">
+      <div class="trust-inner">
+        <span class="trust-label">Działamy z</span>
+        <div class="trust-divider" aria-hidden="true"></div>
+        <div class="trust-items">
+          <span class="trust-item"><span class="trust-dot" aria-hidden="true"></span>Microsoft Solutions Partner</span>
+          <span class="trust-item"><span class="trust-dot" aria-hidden="true"></span>ISO 27001</span>
+          <span class="trust-item"><span class="trust-dot" aria-hidden="true"></span>Własny dział bezpieczeństwa IT</span>
+          <span class="trust-item"><span class="trust-dot" aria-hidden="true"></span>Umowa SLA z gwarancją czasu reakcji</span>
+        </div>
+      </div>
+    </div>
+
+  
+    <section class="section" id="uslugi" aria-labelledby="services-heading">
+      <div class="page">
+        <div class="section-head">
+          <span class="section-label">Co robimy</span>
+          <h2 id="services-heading">Kompleksowa opieka IT</h2>
+          <p class="section-desc">Zamiast zatrudniać własnych informatyków, otrzymujesz pełne wsparcie techniczne i dostęp do certyfikowanych ekspertów z różnych dziedzin.</p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card">
+            <p class="service-num">01</p>
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 20 20" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round">
+                <rect x="2" y="3" width="16" height="13" rx="2"/>
+                <path d="M6 17 L14 17M10 13 L10 17"/>
+              </svg>
+            </div>
+            <h3>Utrzymanie infrastruktury IT</h3>
+            <p>Zarządzamy stacjami roboczymi, serwerami i sieciami. Eliminujemy awarie i chaos, by Twoja firma mogła pracować stabilnie każdego dnia.</p>
+          </article>
+
+          <article class="service-card">
+            <p class="service-num">02</p>
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 20 20" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round">
+                <circle cx="10" cy="10" r="7"/>
+                <path d="M10 6 L10 10 L13 10"/>
+              </svg>
+            </div>
+            <h3>Helpdesk i wsparcie użytkowników</h3>
+            <p>Szybka pomoc techniczna dla Twoich pracowników — telefonicznie, zdalnie lub na miejscu. Reagujemy w czasie poniżej 2 godzin.</p>
+          </article>
+
+          <article class="service-card">
+            <p class="service-num">03</p>
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 20 20" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round">
+                <path d="M10 2 L18 6 L18 10 C18 14.4 14.4 18 10 19 C5.6 18 2 14.4 2 10 L2 6 Z"/>
+              </svg>
+            </div>
+            <h3>Bezpieczeństwo IT i ochrona danych</h3>
+            <p>Własny dział bezpieczeństwa — nie zlecamy tego podwykonawcom. Audyty, ochrona przed ransomware i zarządzanie dostępami.</p>
+          </article>
+
+          <article class="service-card">
+            <p class="service-num">04</p>
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 20 20" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round">
+                <rect x="2" y="5" width="7" height="5" rx="1"/>
+                <rect x="11" y="5" width="7" height="5" rx="1"/>
+                <rect x="5" y="13" width="10" height="4" rx="1"/>
+                <path d="M5.5 10 L5.5 13M14.5 10 L14.5 13M10 13 L10 10"/>
+              </svg>
+            </div>
+            <h3>Sieci i infrastruktura</h3>
+            <p>Konfiguracja i utrzymanie sieci — routery, WiFi, VPN dla pracy zdalnej. Stały monitoring i szybka reakcja na awarie.</p>
+          </article>
+
+          <article class="service-card">
+            <p class="service-num">05</p>
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 20 20" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round">
+                <rect x="3" y="3" width="6" height="6" rx="1"/>
+                <rect x="11" y="3" width="6" height="6" rx="1"/>
+                <rect x="3" y="11" width="6" height="6" rx="1"/>
+                <rect x="11" y="11" width="6" height="6" rx="1"/>
+              </svg>
+            </div>
+            <h3>Microsoft 365 i praca zdalna</h3>
+            <p>Konfiguracja i administracja Microsoft 365 — Exchange, Teams, SharePoint i OneDrive. Praca zdalna bez problemów technicznych.</p>
+          </article>
+
+          <article class="service-card">
+            <p class="service-num">06</p>
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 20 20" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round">
+                <path d="M4 14 L4 8 C4 5.8 5.8 4 8 4 L12 4 C14.2 4 16 5.8 16 8 L16 14"/>
+                <path d="M2 14 L18 14M8 14 L8 17M12 14 L12 17M6 17 L14 17"/>
+              </svg>
+            </div>
+            <h3>Kopie zapasowe i odtwarzanie</h3>
+            <p>Automatyczne backupy do chmury lub na serwer i ochrona przed ransomware. Utrata danych to jeden z najkosztowniejszych problemów firm.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <div class="photo-band" role="img" aria-label="Zdjęcia z pracy zespołu BayerTech">
+      <div class="photo-band-item">
+        <img
+          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=75&auto=format&fit=crop"
+          alt="Zespół IT pracujący razem"
+          loading="lazy"
+        />
+        <span class="photo-band-caption">Nasz zespół</span>
+      </div>
+      <div class="photo-band-item">
+        <img
+          src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=75&auto=format&fit=crop"
+          alt="Centrum danych — serwery"
+          loading="lazy"
+        />
+        <span class="photo-band-caption">Infrastruktura</span>
+      </div>
+      <div class="photo-band-item">
+        <img
+          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=75&auto=format&fit=crop"
+          alt="Spotkanie z klientem"
+          loading="lazy"
+        />
+        <span class="photo-band-caption">Klienci</span>
+      </div>
+    </div>
+
+
+    <section class="split-section" id="jak-dzialamy" aria-labelledby="process-heading">
+      <div class="split-photo">
+        <img
+          src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=800&q=80&auto=format&fit=crop&crop=left"
+          alt="Technik IT podczas pracy przy serwerze"
+          loading="lazy"
+        />
+        <div class="split-photo-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="split-content">
+        <span class="section-label">Jak to działa</span>
+        <h2 id="process-heading">Trzy etapy<br>współpracy</h2>
+        <p class="section-desc" style="margin-top: 0.5rem;">Zaczynamy od audytu, żeby naprawdę zrozumieć Twoją firmę — nie działamy według szablonu.</p>
+
+        <ol class="process-steps" aria-label="Etapy współpracy">
+          <li class="process-item">
+            <div class="process-spine">
+              <div class="process-num" aria-label="Etap 1">01</div>
+              <div class="process-line"></div>
+            </div>
+            <div class="process-body">
+              <h3>Bezpłatny audyt IT</h3>
+              <p>Analizujemy infrastrukturę, procesy i problemy użytkowników. Otrzymujesz konkretny raport — bez żargonu technicznego.</p>
+            </div>
+          </li>
+          <li class="process-item">
+            <div class="process-spine">
+              <div class="process-num" aria-label="Etap 2">02</div>
+              <div class="process-line"></div>
+            </div>
+            <div class="process-body">
+              <h3>Plan działania i umowa SLA</h3>
+              <p>Przygotowujemy plan dopasowany do Twojej firmy i podpisujemy umowę z gwarantowanymi czasami reakcji i karami umownymi.</p>
+            </div>
+          </li>
+          <li class="process-item">
+            <div class="process-spine">
+              <div class="process-num" aria-label="Etap 3">03</div>
+              <div class="process-line"></div>
+            </div>
+            <div class="process-body">
+              <h3>Stała opieka i przeglądy</h3>
+              <p>Dedykowany opiekun techniczny zna Twoją firmę i ludzi. Co kwartał przeprowadzamy przeglądy IT i raportujemy stan infrastruktury.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ─── DLACZEGO MY ─── -->
+    <section class="section why-section" id="dlaczego-my" aria-labelledby="why-heading">
+      <div class="page">
+        <div class="section-head">
+          <span class="section-label">Powody</span>
+          <h2 id="why-heading">Dlaczego firmy wybierają BAYERTECH</h2>
+          <p class="section-desc">Utrzymanie 2 etatowych specjalistów IT to koszt od 20 000 zł miesięcznie - bez sprzętu i szkoleń. Outsourcing daje szerszy zakres kompetencji za niższy koszt.</p>
+        </div>
+
+        <div class="why-grid">
+
+          <div class="why-card">
+            <div class="why-card-top">
+              <span class="why-badge">Bezpieczeństwo</span>
+              <div class="why-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none" stroke="var(--pine)" stroke-width="1.5" stroke-linecap="round">
+                  <path d="M8 1 L14 4 L14 8 C14 11.3 11.3 14.5 8 15.5 C4.7 14.5 2 11.3 2 8 L2 4 Z"/>
+                </svg>
+              </div>
+            </div>
+            <h3>Własny dział bezpieczeństwa</h3>
+            <p>Nie zlecamy ochrony IT podwykonawcom. Nasz zespół ds. cyberbezpieczeństwa pracuje wyłącznie dla klientów BayerTech.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-card-top">
+              <span class="why-badge">Gwarancja</span>
+              <div class="why-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none" stroke="var(--pine)" stroke-width="1.5" stroke-linecap="round">
+                  <rect x="1" y="3" width="14" height="11" rx="1.5"/>
+                  <path d="M4 8 L6.5 10.5 L12 6"/>
+                </svg>
+              </div>
+            </div>
+            <h3>Umowa SLA z karami umownymi</h3>
+            <p>Gwarantujemy czas reakcji poniżej 2 godzin. Jeśli nie dotrzymamy — płacimy kary. Nie składamy obietnic bez pokrycia.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-card-top">
+              <span class="why-badge">Partner</span>
+              <div class="why-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none" stroke="var(--pine)" stroke-width="1.5" stroke-linecap="round">
+                  <rect x="2" y="2" width="5" height="5" rx="1"/>
+                  <rect x="9" y="2" width="5" height="5" rx="1"/>
+                  <rect x="2" y="9" width="5" height="5" rx="1"/>
+                  <rect x="9" y="9" width="5" height="5" rx="1"/>
+                </svg>
+              </div>
+            </div>
+            <h3>Microsoft Solutions Partner</h3>
+            <p>Pełne certyfikacje Microsoft 365. Wdrażamy i administrujemy Exchange, Teams, SharePoint i Azure w sposób bezpieczny.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-card-top">
+              <span class="why-badge">Obsługa</span>
+              <div class="why-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none" stroke="var(--pine)" stroke-width="1.5" stroke-linecap="round">
+                  <circle cx="8" cy="5" r="3"/>
+                  <path d="M2 14 C2 11.2 4.7 9 8 9 C11.3 9 14 11.2 14 14"/>
+                </svg>
+              </div>
+            </div>
+            <h3>Dedykowany opiekun techniczny</h3>
+            <p>Jedna osoba odpowiedzialna za Twoją firmę - zna Twoją infrastrukturę, Twoich ludzi i Twoje procesy.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-card-top">
+              <span class="why-badge">Finanse</span>
+              <div class="why-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none" stroke="var(--pine)" stroke-width="1.5" stroke-linecap="round">
+                  <rect x="1" y="4" width="14" height="10" rx="1.5"/>
+                  <path d="M4 4 L4 2.5 C4 1.7 4.7 1 5.5 1 L10.5 1 C11.3 1 12 1.7 12 2.5 L12 4"/>
+                  <path d="M8 8 L8 11M6.5 9.5 L9.5 9.5"/>
+                </svg>
+              </div>
+            </div>
+            <h3>Abonament — przewidywalny budżet</h3>
+            <p>Stała miesięczna opłata obejmuje cały zakres usług. Brak faktur za każdą wizytę technika. Łatwe planowanie kosztów IT.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-card-top">
+              <span class="why-badge">Strategia</span>
+              <div class="why-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none" stroke="var(--pine)" stroke-width="1.5" stroke-linecap="round">
+                  <path d="M2 12 L5 8 L8 10 L11 5 L14 7"/>
+                  <path d="M12 4 L14 4 L14 7"/>
+                </svg>
+              </div>
+            </div>
+            <h3>Doradztwo strategiczne IT</h3>
+            <p>Pomagamy planować rozwój infrastruktury i wybierać sprzęt. IT w Twojej firmie rośnie uporządkowanie - bez zbędnych kosztów.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section class="section contact-section" id="kontakt" aria-labelledby="contact-heading">
+      <div class="page">
+        <div class="contact-grid">
+
+          <!-- Lewa kolumna — info -->
+          <div class="contact-info">
+            <span class="section-label">Kontakt</span>
+            <h2 id="contact-heading">Umów bezpłatny audyt IT</h2>
+            <p class="section-desc">Zaczniemy od rozmowy o Twojej firmie. Odpowiadamy w ciągu 24 godzin w dni robocze.</p>
+
+            <div class="contact-details" aria-label="Dane kontaktowe">
+
+              <div class="contact-row">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round">
+                    <path d="M1 4 L8 9.5 L15 4M1 4 L1 12 L15 12 L15 4 L1 4"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>E-mail</strong>
+                  <a href="mailto:kontakt@bayertech.pl">biuro@bayertech.pl</a>
+                </div>
+              </div>
+
+              <div class="contact-row">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round">
+                    <path d="M2.5 2.5 C2.5 2.5 5 1.5 6 4 C6.8 6 5 7 5.5 8.5 C6 10 11 13.5 12.5 13 C14 12.5 14.5 10 14.5 10 C14.5 10 12.5 11.5 11.5 10.5 C10.5 9.5 12 8 10.5 7 C9 6 7.5 6.5 6.5 5.5 C5.5 4.5 4 2.8 2.5 2.5"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Telefon</strong>
+                  <a href="tel:+48123456789">+48 123 456 789</a>
+                </div>
+              </div>
+
+              <div class="contact-row">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round">
+                    <path d="M8 1.5 C5.2 1.5 3 3.8 3 6.7 C3 10 8 14.5 8 14.5 C8 14.5 13 10 13 6.7 C13 3.8 10.8 1.5 8 1.5Z"/>
+                    <circle cx="8" cy="6.5" r="2"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Adres</strong>
+                  <span>ul. Przykładowa 13, 00-001 Warszawa</span>
+                </div>
+              </div>
+
+              <div class="contact-row">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round">
+                    <circle cx="8" cy="8" r="6"/>
+                    <path d="M8 4.5 L8 8 L10.5 8"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Godziny pracy</strong>
+                  <span>Pn – Pt, 9:00 – 17:00</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        
+          <div class="contact-form-wrap">
+            <p class="form-title">Napisz do nas</p>
+
+            <form novalidate aria-label="Formularz kontaktowy">
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname">Imię<span class="req" aria-hidden="true">*</span><span class="sr-only"> (wymagane)</span></label>
+                  <input type="text" id="fname" name="fname" autocomplete="given-name" required placeholder="np. Anna" />
+                </div>
+                <div class="form-group">
+                  <label for="lname">Nazwisko<span class="req" aria-hidden="true">*</span><span class="sr-only"> (wymagane)</span></label>
+                  <input type="text" id="lname" name="lname" autocomplete="family-name" required placeholder="np. Kowalska" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Adres e-mail<span class="req" aria-hidden="true">*</span><span class="sr-only"> (wymagane)</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" required placeholder="np. anna@firma.pl" />
+              </div>
+
+              <div class="form-group">
+                <label for="service">Usługa, która Cię interesuje</label>
+                <select id="service" name="service">
+                  <option value="">— Wybierz usługę —</option>
+                  <option value="infra">Utrzymanie infrastruktury IT</option>
+                  <option value="helpdesk">Helpdesk i wsparcie</option>
+                  <option value="sec">Bezpieczeństwo IT</option>
+                  <option value="net">Sieci i infrastruktura</option>
+                  <option value="m365">Microsoft 365</option>
+                  <option value="backup">Kopie zapasowe</option>
+                  <option value="audit">Bezpłatny audyt IT</option>
+                  <option value="other">Inne</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Wiadomość</label>
+                <textarea id="message" name="message" placeholder="Opisz krótko, czego potrzebujesz..."></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit">
+                Wyślij wiadomość
+                <span class="submit-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 10 10" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M1 5 L9 5M6 2 L9 5 L6 8"/>
+                  </svg>
+                </span>
+              </button>
+
+              <p class="form-note">
+                Pola oznaczone<span style="color:var(--accent)">*</span> są wymagane.
+                Twoje dane są bezpieczne. <a href="#">Polityka prywatności</a>.
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════ FOOTER ══════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <a href="#" class="footer-logo" aria-label="BAYERTECH — strona główna">
+        <svg class="logo-mark" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="36" height="36" rx="8" fill="#0F0E0C"/>
+          <path d="M10 9 L10 27 L18.5 27 C22.1 27 24.8 24.6 24.8 21.5 C24.8 19.6 23.8 18 22.3 17.1 C23.5 16.1 24.3 14.6 24.3 13 C24.3 10.1 21.9 9 18.5 9 Z M13.2 12 L18 12 C19.9 12 21.2 13 21.2 14.4 C21.2 15.8 19.9 16.8 18 16.8 L13.2 16.8 Z M13.2 19.8 L18.5 19.8 C20.8 19.8 21.6 21 21.6 22.2 C21.6 23.5 20.5 24.5 18.5 24.5 L13.2 24.5 Z" fill="white"/>
+          <circle cx="28" cy="9" r="3" fill="#1A4F8A"/>
+        </svg>
+        <span class="footer-logo-name"><span class="logo-name">BAYER<span>TECH</span></span></span>
+      </a>
+      <div class="footer-links">
+        <a href="#">Polityka prywatności</a>
+        <a href="#">Regulamin</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+      <span class="footer-copy">© 2026 BAYERTECH</span>
+    </div>
+  </footer>
+
+
+<script>
+const btn=document.getElementById('backToTop');
+window.addEventListener('scroll',()=>{btn.style.display=window.scrollY>500?'block':'none';});
+btn.onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+</script>
+
+</body>
+</html>
